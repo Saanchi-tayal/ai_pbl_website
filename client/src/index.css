@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-teal: #1F5E63;
+  --soft-sage: #8FAF9A;
+  --warm-offwhite: #E8E6DF;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #F6F8F7;
+  color: #1E2929;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar for Healthcare UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F4F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C2D1C8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8FAF9A;
+}
+
+/* Glass & Card Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(226, 230, 227, 0.8);
+}
+
+.table-row-hover:hover {
+  background-color: #F8FAF9;
+  transition: background-color 0.15s ease-in-out;
+}
+
+/* Subtle animations */
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

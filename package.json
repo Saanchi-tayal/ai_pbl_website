@@ -1,0 +1,14 @@
+{
+  "name": "ai-patient-admission-management-system",
+  "version": "1.0.0",
+  "description": "AI-Powered Patient Admission Management System (PAMS) for Hospital Workflows",
+  "scripts": {
+    "dev": "node run-dev.js",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["hospital-management", "patient-admission", "ai-healthcare", "pbl-project"],
+  "author": "PAMS Team",
+  "license": "MIT"
+}
