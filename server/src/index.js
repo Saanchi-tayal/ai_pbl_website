@@ -66,7 +66,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-// Start Server
+// Start Server (Standalone Local Mode)
 async function startServer() {
   try {
     await storage.initialize();
@@ -83,4 +83,17 @@ async function startServer() {
   }
 }
 
-startServer();
+let isInitialized = false;
+export async function initApp() {
+  if (!isInitialized) {
+    await storage.initialize();
+    isInitialized = true;
+  }
+  return app;
+}
+
+if (!process.env.VERCEL) {
+  startServer();
+}
+
+export default app;
