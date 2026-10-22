@@ -3,6 +3,8 @@
 
 An intelligent, modern, responsive full-stack web application built for college Project-Based Learning (PBL). PAMS digitizes and streamlines hospital inpatient admissions, prevents double-booking of beds through atomic lock checks, performs automated clinical triage scoring (adapted from the NHS NEWS2 protocol), and assists medical staff with department and bed routing.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Saanchi-tayal/ai_pbl_website)
+
 ---
 
 ## 🏥 Key Features
